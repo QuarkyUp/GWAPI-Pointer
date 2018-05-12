@@ -1,0 +1,28 @@
+###############################
+##			     ##
+##	Liste des modifs     ##
+##			     ##
+###############################
+
+- Mise à jour des offsets pour la fonction GetAreaVanquished()
+
+- Nouveau hook pour les rendering :
+	- Ajout du fichier Rendering_New.au3
+	- Ajout de _NewRenderer_Init() and la fonction InitClient() 
+	- Ajout de l'include du fichier and gwApi.au3
+	- Ajout de _ToggleRendering() dans client_interface.au3
+
+- Fonction Travel() ne permettait pas de se rendre en Amérique
+
+- Test dans la fonction UseSkillEx qu'on ne soit pas mort avant de cast
+
+- Détour pour tester si une cible est obstruée
+	- Ajout du fichier ObsDetect.au3
+	- Ajout de l'appelle à la fonction _ObsDetect_Init() dans InitClient()
+
+- Ajout des MODSTRING pour les runes et insignes dans le fichier Constants.au3
+
+- Ajout des mécanismes nécessaire au craft d'items
+	-> http://www.gamerevision.com/showthread.php?7869-exchange-item-for-item-NPC-dialog&highlight=%24mCollectItem
+
+- Ajout de #Region Extension dans item.au3 pour craft les objets
